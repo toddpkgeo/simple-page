@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Doc 1</title>
+
+    <style>
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: lightgoldenrodyellow;
+            background-color: #222;
+        }
+        #container {
+            display: grid;
+            margin: 0;
+            grid-template-areas:
+            "header header"
+            "aside article"
+            "footer footer";
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 6fr 1fr;
+        }
+        header {
+            grid-area: header;
+        }
+        footer {
+            grid-area: footer;
+        }
+        header, footer {
+            border: 1px solid lightcoral;
+            background-color: #323;
+            text-align: center;
+        }
+        article {
+            grid-area: article;
+            border: 1px solid lightseagreen;
+        }
+        aside {
+            grid-area: aside;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- if header is used for navigation, then use nav -->
+        <header>
+            <p>Hello</p>
+        </header>
+        <!-- if article is not used as such, then use main -->
+        <article>
+            <h2>Ducks</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum a esse cum fugiat mollitia illum ad vitae, perferendis quam aliquid, quibusdam magnam inventore, doloremque quas recusandae. Perferendis tempora quis alias!</p>
+        </article>
+        <aside>
+            <ul>
+                <li>one</li>
+                <li>two</li>
+            </ul>
+        </aside>
+        <footer>
+            <p>Last updated 2022-12-03</p>
+        </footer>
+    </div>
+</body>
+</html>
