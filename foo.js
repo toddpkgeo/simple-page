@@ -1,5 +1,5 @@
 //@ts-check
 
 function foo() {
-    console.log("Foo");
+  console.log("Foo");
 }
