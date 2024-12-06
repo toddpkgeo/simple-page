@@ -1,47 +1,16 @@
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   color: lightgoldenrodyellow;
   background-color: #222;
+}
+article {
+  margin: 2rem auto;
+  max-width: 65ch;
+  text-wrap: balance;
 }
 b,
 strong {
   color: #fffffe;
-}
-#container {
-  display: grid;
-  margin: 0;
-  grid-template-areas:
-    "header header"
-    "aside article"
-    "footer footer";
-  grid-template-columns: min-content 1fr;
-  grid-template-rows: max-content 1fr max-content;
-  height: 100svh;
-}
-header {
-  grid-area: header;
-}
-footer {
-  grid-area: footer;
-}
-header,
-footer {
-  /*border: 1px solid lightcoral;*/
-  background-color: #323;
-  text-align: center;
-}
-article {
-  grid-area: article;
-  text-wrap: balance;
-  /*border: 1px solid lightseagreen;*/
-  padding-inline: 1rem;
-}
-article p {
-  max-width: 80ch;
-}
-aside {
-  grid-area: aside;
 }
